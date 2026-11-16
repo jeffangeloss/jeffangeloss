@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 330" width="840" height="330" role="img" aria-label="Seis facetas: full-stack y DevOps, IA, biomédica, IoT, ciberseguridad, música y coctelería">
+<style>
+.tarjeta { fill: #11162a; stroke: #2a3263; stroke-width: 1 }
+.titulo { fill: #e6ebff; font: 600 15px "Segoe UI",Helvetica,Arial,sans-serif }
+.texto { fill: #9aa3d6; font: 12.5px "Segoe UI",Helvetica,Arial,sans-serif }
+.icono { fill: none; stroke: #8fa2ff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+.late { transform-box: fill-box; transform-origin: center; animation: late 3.2s ease-in-out infinite }
+@keyframes late { 0%,100% { transform: scale(1) } 50% { transform: scale(1.12) } }
+@media (prefers-reduced-motion: reduce) { .late { animation: none } }
+.traza { stroke-dasharray: 120; stroke-dashoffset: 120; animation: traza 2.4s linear infinite }
+@keyframes traza { 0% { stroke-dashoffset: 120 } 60% { stroke-dashoffset: 0 } 85% { stroke-dashoffset: 0; opacity: 1 } 100% { stroke-dashoffset: 0; opacity: 0 } }
+.aura { fill: none; stroke: #b693ff; stroke-width: 1.6; opacity: 0; animation: aura 9s ease-in-out infinite }
+@keyframes aura { 0%,100% { opacity: 0 } 6% { opacity: .95 } 16% { opacity: 0 } }
+.barra { fill: url(#gb); animation: barre 9s ease-in-out infinite; opacity: 0 }
+@keyframes barre { 0% { opacity: 0; transform: translateX(0) } 3% { opacity: 1 } 14% { opacity: 0; transform: translateX(240px) } 100% { opacity: 0; transform: translateX(240px) } }
+@media (prefers-reduced-motion: reduce) { .traza,.aura,.barra { animation: none } .traza { stroke-dashoffset: 0 } .aura,.barra { opacity: 0 } }
+
+@media (prefers-color-scheme: light) { .tarjeta { fill: #f6f8ff; stroke: #c9d0f2 } .titulo { fill: #1f2a5c } .texto { fill: #4a5390 } .icono { stroke: #4d5fd6 } }
+</style>
+<defs><linearGradient id="gb" x1="0" x2="1"><stop offset="0" stop-color="#8fa2ff" stop-opacity="0"/><stop offset=".5" stop-color="#8fa2ff" stop-opacity=".12"/><stop offset="1" stop-color="#8fa2ff" stop-opacity="0"/></linearGradient><clipPath id="t0"><rect x="4" y="4" width="268" height="150" rx="12"/></clipPath><clipPath id="t1"><rect x="286" y="4" width="268" height="150" rx="12"/></clipPath><clipPath id="t2"><rect x="568" y="4" width="268" height="150" rx="12"/></clipPath><clipPath id="t3"><rect x="4" y="172" width="268" height="150" rx="12"/></clipPath><clipPath id="t4"><rect x="286" y="172" width="268" height="150" rx="12"/></clipPath><clipPath id="t5"><rect x="568" y="172" width="268" height="150" rx="12"/></clipPath></defs>
+
+<g class="bloque" style="animation-delay:.0s">
+  <rect class="tarjeta" x="4" y="4" width="268" height="150" rx="12"/>
+  <path class="icono late" d="M34 30 l-12 12 12 12 M58 30 l12 12 -12 12 M50 26 l-8 32"/>
+  <text class="titulo" x="22" y="92">Full-stack y DevOps</text>
+  <text class="texto" x="22" y="114">ULima++: API en Hono y app en Flutter.</text>
+  <text class="texto" x="22" y="132">Piloto ABET con FastAPI, React y CI.</text>
+</g>
+
+<g class="bloque" style="animation-delay:.15s">
+  <rect class="tarjeta" x="286" y="4" width="268" height="150" rx="12"/>
+  <g class="icono late"><circle cx="312" cy="34" r="5"/><circle cx="340" cy="26" r="5"/><circle cx="340" cy="52" r="5"/><circle cx="366" cy="40" r="5"/><path d="M316 36 L335 28 M316 37 L335 50 M345 28 L361 38 M345 51 L361 42"/></g>
+  <text class="titulo" x="304" y="92">IA y machine learning</text>
+  <text class="texto" x="304" y="114">Detección de phishing con CatBoost,</text>
+  <text class="texto" x="304" y="132">F1 de 0,9998 en el curso de ML.</text>
+</g>
+
+<g class="bloque" style="animation-delay:.3s">
+  <rect class="tarjeta" x="568" y="4" width="268" height="150" rx="12"/>
+  <path class="icono traza" d="M586 42 h18 l6 -12 l8 26 l7 -20 l5 6 h24"/>
+  <text class="titulo" x="586" y="92">Biomédica</text>
+  <text class="texto" x="586" y="114">Dos años de Ingeniería Biomédica.</text>
+  <text class="texto" x="586" y="132">Tesis con telemetría rítmica y biométrica.</text>
+</g>
+
+<g class="bloque" style="animation-delay:.45s">
+  <rect class="tarjeta" x="4" y="172" width="268" height="150" rx="12"/>
+  <g class="icono late"><rect x="28" y="190" width="30" height="30" rx="4"/><path d="M36 190 v-7 M50 190 v-7 M36 220 v7 M50 220 v7 M28 198 h-7 M28 212 h-7 M58 198 h7 M58 212 h7"/></g>
+  <text class="titulo" x="22" y="260">IoT</text>
+  <text class="texto" x="22" y="282">Segundo factor TOTP con ESP32.</text>
+  <text class="texto" x="22" y="300">Líder de IoT en IEEE ComSoc UPC, 2025.</text>
+</g>
+
+<g class="bloque" style="animation-delay:.6s">
+  <rect class="tarjeta" x="286" y="172" width="268" height="150" rx="12"/>
+  <path class="icono late" d="M330 184 l22 8 v14 c0 14 -10 22 -22 26 c-12 -4 -22 -12 -22 -26 v-14 z M322 206 l6 6 l12 -12"/>
+  <text class="titulo" x="304" y="260">Ciberseguridad</text>
+  <text class="texto" x="304" y="282">Auditoría MASVS de una app móvil.</text>
+  <text class="texto" x="304" y="300">ISO/IEC 27001, NIST CSF 2.0 y OWASP.</text>
+</g>
+
+<g class="bloque" style="animation-delay:.75s">
+  <rect class="tarjeta" x="568" y="172" width="268" height="150" rx="12"/>
+  <path class="icono late" d="M600 222 v-30 l22 -6 v30 M600 222 a6 5 0 1 1 -1 -1 M622 216 a6 5 0 1 1 -1 -1"/>
+  <text class="titulo" x="586" y="260">Música y coctelería</text>
+  <text class="texto" x="586" y="282">Violista en Sinfonía por el Perú</text>
+  <text class="texto" x="586" y="300">y el Ensamble Musical ULIMA.</text>
+</g>
+<rect class="aura" x="4" y="4" width="268" height="150" rx="12" style="animation-delay:0.0s"/><g clip-path="url(#t0)"><rect class="barra" x="-56" y="4" width="80" height="150" style="animation-delay:0.0s"/></g>
+<rect class="aura" x="286" y="4" width="268" height="150" rx="12" style="animation-delay:1.5s"/><g clip-path="url(#t1)"><rect class="barra" x="226" y="4" width="80" height="150" style="animation-delay:1.5s"/></g>
+<rect class="aura" x="568" y="4" width="268" height="150" rx="12" style="animation-delay:3.0s"/><g clip-path="url(#t2)"><rect class="barra" x="508" y="4" width="80" height="150" style="animation-delay:3.0s"/></g>
+<rect class="aura" x="4" y="172" width="268" height="150" rx="12" style="animation-delay:4.5s"/><g clip-path="url(#t3)"><rect class="barra" x="-56" y="172" width="80" height="150" style="animation-delay:4.5s"/></g>
+<rect class="aura" x="286" y="172" width="268" height="150" rx="12" style="animation-delay:6.0s"/><g clip-path="url(#t4)"><rect class="barra" x="226" y="172" width="80" height="150" style="animation-delay:6.0s"/></g>
+<rect class="aura" x="568" y="172" width="268" height="150" rx="12" style="animation-delay:7.5s"/><g clip-path="url(#t5)"><rect class="barra" x="508" y="172" width="80" height="150" style="animation-delay:7.5s"/></g>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="840" height="360" role="img" aria-label="Animes favoritos: Shingeki no Kyojin, Las quintillizas, Rompiendo el hielo, Your Name, Your Lie in April, Oshi no Ko y El tiempo contigo">
+<style>
+.c { fill: #11162a; stroke: #2a3263 }
+.t { fill: #e6ebff; font: 600 13px "Segoe UI",Helvetica,Arial,sans-serif }
+.s { fill: #8b93c9; font: 11px "Segoe UI",Helvetica,Arial,sans-serif }
+.nube { fill: #c9d1ff; opacity: .5; animation: viento 4s linear infinite }
+@keyframes viento { from { transform: translateX(0) } to { transform: translateX(-90px) } }
+.chispa { animation: chispa 2.5s ease-in-out infinite; opacity: .2 }
+@keyframes chispa { 0%,100% { opacity: .2 } 50% { opacity: 1 } }
+.copo { fill: #dff3ff; animation: cae 5s linear infinite }
+@keyframes cae { from { transform: translateY(-20px) } to { transform: translateY(90px) } }
+.cometa { animation: cruza 4s ease-in infinite }
+@keyframes cruza { 0% { transform: translate(-60px,-30px); opacity: 0 } 20% { opacity: 1 } 100% { transform: translate(140px,60px); opacity: 0 } }
+.petalo { fill: #ffc4dc; animation: flota 6s ease-in-out infinite }
+@keyframes flota { 0% { transform: translate(0,-15px) rotate(0) } 100% { transform: translate(40px,90px) rotate(240deg); opacity: 0 } }
+.estrella { fill: #ffd76e; transform-box: fill-box; transform-origin: center; animation: brilla 2s ease-in-out infinite }
+@keyframes brilla { 0%,100% { transform: scale(.7) rotate(0); opacity: .5 } 50% { transform: scale(1.15) rotate(20deg); opacity: 1 } }
+.gota { stroke: #8fc7ff; stroke-width: 1.4; animation: llueve 1.2s linear infinite }
+@keyframes llueve { from { transform: translateY(-20px) } to { transform: translateY(70px); opacity: 0 } }
+.rayo { fill: #ffe9a8; opacity: 0; animation: sol 6s ease-in-out infinite }
+@keyframes sol { 0%,40% { opacity: 0 } 60%,90% { opacity: .55 } 100% { opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important } .chispa,.rayo { opacity: .7 } }
+</style>
+<defs>
+  <clipPath id="k1"><rect x="4" y="4" width="200" height="110" rx="10"/></clipPath>
+  <clipPath id="k2"><rect x="214" y="4" width="200" height="110" rx="10"/></clipPath>
+  <clipPath id="k3"><rect x="424" y="4" width="200" height="110" rx="10"/></clipPath>
+  <clipPath id="k4"><rect x="634" y="4" width="200" height="110" rx="10"/></clipPath>
+  <clipPath id="k5"><rect x="109" y="186" width="200" height="110" rx="10"/></clipPath>
+  <clipPath id="k6"><rect x="319" y="186" width="200" height="110" rx="10"/></clipPath>
+  <clipPath id="k7"><rect x="529" y="186" width="200" height="110" rx="10"/></clipPath>
+  <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2a6b"/><stop offset="1" stop-color="#3b1f5c"/></linearGradient>
+</defs>
+
+<!-- Fila 1 -->
+<rect class="c" x="4" y="4" width="200" height="110" rx="10"/>
+<g clip-path="url(#k1)">
+  <ellipse class="nube" cx="120" cy="40" rx="40" ry="10"/><ellipse class="nube" cx="190" cy="70" rx="50" ry="12" style="animation-delay:-2s"/><ellipse class="nube" cx="80" cy="90" rx="35" ry="8" style="animation-delay:-1s"/>
+</g>
+<text class="t" x="14" y="136">Shingeki no Kyojin</text><text class="s" x="14" y="153">Cielo abierto y viento</text>
+
+<rect class="c" x="214" y="4" width="200" height="110" rx="10"/>
+<g clip-path="url(#k2)">
+  <circle class="chispa" cx="254" cy="60" r="9" fill="#ff8fb1"/><circle class="chispa" cx="284" cy="60" r="9" fill="#ffd76e" style="animation-delay:.5s"/><circle class="chispa" cx="314" cy="60" r="9" fill="#8fe3a1" style="animation-delay:1s"/><circle class="chispa" cx="344" cy="60" r="9" fill="#8fb8ff" style="animation-delay:1.5s"/><circle class="chispa" cx="374" cy="60" r="9" fill="#c79bff" style="animation-delay:2s"/>
+</g>
+<text class="t" x="224" y="136">Las quintillizas</text><text class="s" x="224" y="153">Cinco destellos, uno a la vez</text>
+
+<rect class="c" x="424" y="4" width="200" height="110" rx="10"/>
+<g clip-path="url(#k3)">
+  <g class="copo"><path d="M470 20 v14 M463 27 h14 M465 22 l10 10 M475 22 l-10 10" stroke="#dff3ff" stroke-width="1.4"/></g>
+  <g class="copo" style="animation-delay:-2s"><path d="M530 15 v12 M524 21 h12 M526 17 l8 8 M534 17 l-8 8" stroke="#dff3ff" stroke-width="1.3"/></g>
+  <g class="copo" style="animation-delay:-3.5s"><path d="M590 25 v10 M585 30 h10" stroke="#dff3ff" stroke-width="1.3"/></g>
+  <circle class="copo" cx="500" cy="10" r="2" style="animation-delay:-1s"/><circle class="copo" cx="560" cy="8" r="1.6" style="animation-delay:-4s"/>
+</g>
+<text class="t" x="434" y="136">Rompiendo el hielo</text><text class="s" x="434" y="153">Copos y cristales de hielo</text>
+
+<rect class="c" x="634" y="4" width="200" height="110" rx="10"/>
+<g clip-path="url(#k4)">
+  <rect x="634" y="4" width="200" height="110" fill="url(#cielo)" opacity=".7"/>
+  <g class="cometa"><line x1="660" y1="30" x2="700" y2="50" stroke="#bfe3ff" stroke-width="2"/><line x1="664" y1="40" x2="700" y2="50" stroke="#ffb3d1" stroke-width="1.5"/><circle cx="702" cy="51" r="3" fill="#fff"/></g>
+</g>
+<text class="t" x="644" y="136">Your Name</text><text class="s" x="644" y="153">Un cometa que se divide</text>
+
+<!-- Fila 2 -->
+<rect class="c" x="109" y="186" width="200" height="110" rx="10"/>
+<g clip-path="url(#k5)">
+  <g stroke="#3b4470"><line x1="120" y1="226" x2="300" y2="226"/><line x1="120" y1="234" x2="300" y2="234"/><line x1="120" y1="242" x2="300" y2="242"/><line x1="120" y1="250" x2="300" y2="250"/><line x1="120" y1="258" x2="300" y2="258"/></g>
+  <ellipse class="petalo" cx="150" cy="200" rx="5" ry="3"/><ellipse class="petalo" cx="200" cy="196" rx="4" ry="2.5" style="animation-delay:-2s"/><ellipse class="petalo" cx="250" cy="202" rx="5" ry="3" style="animation-delay:-4s"/>
+</g>
+<text class="t" x="119" y="318">Your Lie in April</text><text class="s" x="119" y="335">Pétalos sobre una partitura</text>
+
+<rect class="c" x="319" y="186" width="200" height="110" rx="10"/>
+<g clip-path="url(#k6)">
+  <path class="estrella" d="M419 216 l6 14 15 1 -12 9 4 15 -13 -8 -13 8 4 -15 -12 -9 15 -1z"/>
+  <path class="estrella" d="M370 236 l3 7 8 1 -6 4 2 8 -7 -4 -7 4 2 -8 -6 -4 8 -1z" style="animation-delay:.7s"/>
+  <path class="estrella" d="M470 230 l3 7 8 1 -6 4 2 8 -7 -4 -7 4 2 -8 -6 -4 8 -1z" style="animation-delay:1.3s"/>
+</g>
+<text class="t" x="329" y="318">Oshi no Ko</text><text class="s" x="329" y="335">Destellos con forma de estrella</text>
+
+<rect class="c" x="529" y="186" width="200" height="110" rx="10"/>
+<g clip-path="url(#k7)">
+  <polygon class="rayo" points="640,186 680,186 700,296 600,296"/>
+  <line class="gota" x1="550" y1="200" x2="547" y2="210"/><line class="gota" x1="575" y1="196" x2="572" y2="206" style="animation-delay:-.4s"/><line class="gota" x1="610" y1="202" x2="607" y2="212" style="animation-delay:-.8s"/><line class="gota" x1="700" y1="198" x2="697" y2="208" style="animation-delay:-.2s"/><line class="gota" x1="715" y1="204" x2="712" y2="214" style="animation-delay:-.6s"/>
+</g>
+<text class="t" x="539" y="318">El tiempo contigo</text><text class="s" x="539" y="335">La lluvia se abre y sale el sol</text>
+</svg>

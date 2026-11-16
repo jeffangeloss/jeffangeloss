@@ -1,0 +1,36 @@
+# Regenera la partitura de contribuciones cada día y la guarda en la rama `output`.
+# Usa solo GITHUB_TOKEN. Escribir en `output` mantiene vivo el flujo programado, que GitHub
+# desactiva tras 60 días sin actividad en un repo público.
+name: partitura
+
+on:
+  schedule:
+    - cron: "17 11 * * *"   # 06:17 en Lima
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  partitura:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/partitura.py "${{ github.repository_owner }}"
+      - name: Publicar en la rama output
+        run: |
+          mkdir -p /tmp/salida && cp assets/partitura.svg /tmp/salida/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan output
+          git rm -rf --quiet .
+          cp /tmp/salida/partitura.svg .
+          git add partitura.svg
+          git commit -m "Actualiza la partitura" --quiet
+          git push --force origin output

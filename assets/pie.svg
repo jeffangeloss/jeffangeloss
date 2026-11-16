@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 120" width="840" height="120" role="img" aria-label="Ciencia + Tecnología + Arte = Impacto">
+<style>
+.o1 { fill: #1b2a6b; opacity: .55; animation: ola 9s linear infinite }
+.o2 { fill: #3b1f5c; opacity: .6; animation: ola 6s linear infinite reverse }
+.o3 { fill: #2a3a8f; opacity: .5; animation: ola 12s linear infinite }
+@keyframes ola { from { transform: translateX(0) } to { transform: translateX(-840px) } }
+.lema { fill: #e6ebff; font: 600 16px "Segoe UI",Helvetica,Arial,sans-serif; letter-spacing: .5px; animation: respira 5s ease-in-out infinite }
+@keyframes respira { 0%,100% { opacity: .7 } 50% { opacity: 1 } }
+@media (prefers-reduced-motion: reduce) { .o1,.o2,.o3,.lema { animation: none } }
+</style>
+<defs><clipPath id="m"><rect width="840" height="120" rx="12"/></clipPath></defs>
+<g clip-path="url(#m)">
+<path class="o3" d="M0 70 q70.0 -16 140.0 0 t140.0 0 q70.0 -16 140.0 0 t140.0 0 q70.0 -16 140.0 0 t140.0 0 q70.0 -16 140.0 0 t140.0 0 q70.0 -16 140.0 0 t140.0 0 q70.0 -16 140.0 0 t140.0 0 q70.0 -16 140.0 0 t140.0 0 V120 H0 Z"/>
+<path class="o1" d="M0 82 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 q52.5 -12 105.0 0 t105.0 0 V120 H0 Z"/>
+<path class="o2" d="M0 94 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 q42.0 -10 84.0 0 t84.0 0 V120 H0 Z"/>
+</g>
+<text class="lema" x="420.0" y="44" text-anchor="middle">Ciencia + Tecnología + Arte = Impacto</text>
+</svg>
