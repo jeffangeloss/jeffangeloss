@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Arma assets/estante-animes.svg: un estante con el póster de cada anime favorito, cada uno con su
-propio efecto animado encima (viento, destellos, nieve, cometa, pétalos, estrellas y lluvia).
+propio efecto animado encima (viento, destellos, nieve, cometa, pétalos, estrellas, lluvia y hexágonos).
 
 Los pósters salen de ~/fotos/imagenes-anime (material promocional oficial, ver FUENTES.txt), se
 recortan a 2:3, se reducen a miniatura y se incrustan en base64 porque GitHub no carga imágenes
@@ -16,10 +16,10 @@ from PIL import Image
 
 FOTOS = Path.home() / "fotos" / "imagenes-anime"
 DESTINO = Path(__file__).resolve().parent.parent / "assets" / "estante-animes.svg"
-PW, PH = 108, 160  # tamaño de cada póster en el SVG
-X0, Y0, PASO = 12, 18, 118
-W, H = 840, 252
-CICLO = 14  # segundos para que el foco recorra los siete pósters
+PW, PH = 94, 141  # tamaño de cada póster en el SVG
+X0, Y0, PASO = 13, 18, 102
+W, H = 840, 232
+CICLO = 16  # segundos para que el foco recorra los ocho pósters
 
 ANIMES = [
     ("Shingeki no Kyojin", "01-snk/poster-01-sin-texto.jpg", "viento"),
@@ -29,6 +29,7 @@ ANIMES = [
     ("Your Lie in April", "05-your-lie-in-april/poster-01-sin-texto.jpg", "petalos"),
     ("Oshi no Ko", "06-oshi-no-ko/poster-01-sin-texto.jpg", "estrellas"),
     ("El tiempo contigo", "07-el-tiempo-contigo/poster-02-sin-texto.jpg", "lluvia"),
+    ("Evangelion", "08-evangelion-rebuild/poster-2.0-01-sin-texto.jpg", "hexagonos"),
 ]
 
 
@@ -79,6 +80,14 @@ def efecto(tipo):
         return "".join(
             f'<line class="got" x1="{x}" y1="0" x2="{x-3}" y2="10" style="animation-delay:{d}s"/>'
             for x, d in [(10, 0), (28, -.5), (46, -.25), (64, -.75), (82, -.15), (100, -.6)])
+    if tipo == "hexagonos":
+        # Un campo de hexágonos naranjas que se expande desde el centro, como una barrera de energía.
+        def hexa(r):
+            import math
+            pts = " ".join(f"{47 + r*math.cos(math.radians(60*k+30)):.1f},{70 + r*math.sin(math.radians(60*k+30)):.1f}" for k in range(6))
+            return pts
+        return "".join(
+            f'<polygon class="hex" points="{hexa(18)}" style="animation-delay:{d}s"/>' for d in (0, -0.8, -1.6))
     return ""
 
 
@@ -115,7 +124,7 @@ def main():
 @keyframes flota {{ 0%,100% {{ transform: translateY(0) }} 50% {{ transform: translateY(-5px) }} }}
 .reflejo {{ animation: refleja {CICLO}s ease-in-out infinite }}
 @keyframes refleja {{ 0% {{ transform: translateX(0) }} {pct*0.8:.1f}%,100% {{ transform: translateX(190px) }} }}
-.nom {{ fill: #c9d1ff; font: 600 10.5px "Segoe UI",Helvetica,Arial,sans-serif }}
+.nom {{ fill: #c9d1ff; font: 600 9.6px "Segoe UI",Helvetica,Arial,sans-serif }}
 .pie {{ fill: #6f78ad; font: 10px "Segoe UI",Helvetica,Arial,sans-serif }}
 .raf {{ stroke: #e6edff; stroke-width: 1.3; stroke-linecap: round; opacity: 0; animation: raf 2.8s linear infinite }}
 @keyframes raf {{ 0% {{ transform: translateX(30px); opacity: 0 }} 20% {{ opacity: .8 }} 100% {{ transform: translateX(-120px); opacity: 0 }} }}
@@ -129,6 +138,8 @@ def main():
 @keyframes pet {{ 0% {{ transform: translate(0,-6px) rotate(0) }} 100% {{ transform: translate(30px,166px) rotate(260deg); opacity: .2 }} }}
 .est {{ fill: #ffe38a; transform-box: fill-box; transform-origin: center; animation: est 2s ease-in-out infinite }}
 @keyframes est {{ 0%,100% {{ transform: scale(.6); opacity: .4 }} 50% {{ transform: scale(1.2) rotate(25deg); opacity: 1 }} }}
+.hex {{ fill: none; stroke: #ff9a3c; stroke-width: 1.6; transform-box: fill-box; transform-origin: center; animation: hex 2.4s ease-out infinite }}
+@keyframes hex {{ 0% {{ transform: scale(.3); opacity: 0 }} 15% {{ opacity: .95 }} 100% {{ transform: scale(3.2); opacity: 0 }} }}
 .got {{ stroke: #cfe6ff; stroke-width: 1.2; opacity: .8; animation: got 1.1s linear infinite }}
 @keyframes got {{ from {{ transform: translateY(-12px) }} to {{ transform: translateY(166px) }} }}
 @media (prefers-color-scheme: light) {{ .nom {{ fill: #1f2a5c }} .pie {{ fill: #5560a0 }} .marco {{ stroke: #c9d0f2 }} }}
