@@ -83,6 +83,6 @@ Estudiante de Ingeniería de Sistemas con dos años previos de Ingeniería Biom�
 
 ### 🌸 Animes favoritos
 
-<img src="./assets/estante-animes.svg" width="100%" alt="Estante con los pósters de Shingeki no Kyojin, Las quintillizas, Rompiendo el hielo, Your Name, Your Lie in April, Oshi no Ko, El tiempo contigo y Evangelion, cada uno con un efecto animado: viento, destellos, nieve, cometa, pétalos, estrellas, lluvia y un campo de hexágonos." />
+<img src="./assets/estante-animes.svg?v=3" width="100%" alt="Estante con los pósters de Shingeki no Kyojin, Las quintillizas, Rompiendo el hielo, Your Name, Your Lie in April, Oshi no Ko, El tiempo contigo y Evangelion, cada uno con un efecto animado: viento, destellos, nieve, cometa, pétalos, estrellas, lluvia y un campo de hexágonos." />
 
 <img src="./assets/pie.svg" width="100%" alt="Ciencia + Tecnología + Arte = Impacto" />
