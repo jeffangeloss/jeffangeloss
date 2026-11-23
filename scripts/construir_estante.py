@@ -22,7 +22,7 @@ W, H = 840, 232
 CICLO = 16  # segundos para que el foco recorra los ocho pósters
 
 ANIMES = [
-    ("Shingeki no Kyojin", "01-snk/poster-01-sin-texto.jpg", "viento"),
+    ("Shingeki no Kyojin", "01-snk/poster-the-last-attack-01-japones.jpg", "viento"),
     ("Las quintillizas", "02-quintillizas/poster-01-sin-texto.jpg", "chispas"),
     ("Rompiendo el hielo", "03-rompiendo-el-hielo/portada-temporada-1.jpg", "nieve"),
     ("Your Name", "04-your-name/poster-01-sin-texto.jpg", "cometa"),
