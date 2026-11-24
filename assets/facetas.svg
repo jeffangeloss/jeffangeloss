@@ -24,7 +24,7 @@
   <path class="icono late" d="M34 30 l-12 12 12 12 M58 30 l12 12 -12 12 M50 26 l-8 32"/>
   <text class="titulo" x="22" y="92">Full-stack y DevOps</text>
   <text class="texto" x="22" y="114">ULima++: API en Hono y app en Flutter.</text>
-  <text class="texto" x="22" y="132">Piloto ABET con FastAPI, React y CI.</text>
+  <text class="texto" x="22" y="132">Sistema ABET con FastAPI, React y CI.</text>
 </g>
 
 <g class="bloque" style="animation-delay:.15s">
