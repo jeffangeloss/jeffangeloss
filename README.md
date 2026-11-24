@@ -192,6 +192,14 @@ Instrumento de medición de la tesis sobre un motor de juego rítmico, que regis
 
 <img src="./assets/separador.svg" width="100%" alt="" />
 
+### 📊 Estadísticas de GitHub
+
+<img src="https://raw.githubusercontent.com/jeffangeloss/jeffangeloss/output/estadisticas.svg" width="100%" alt="Estadísticas de GitHub del último año: contribuciones, commits, pull requests, estrellas, issues, repos con commits, racha actual y racha más larga, y los lenguajes de mis repos públicos." />
+
+<sub>Las calcula el mismo flujo diario con la API de GitHub, sin servicios externos.</sub>
+
+<img src="./assets/separador.svg" width="100%" alt="" />
+
 ### 🌸 Animes favoritos
 
 <img src="./assets/estante-animes.svg?v=3" width="100%" alt="Estante con los pósters de Shingeki no Kyojin, Las quintillizas, Rompiendo el hielo, Your Name, Your Lie in April, Oshi no Ko, El tiempo contigo y Evangelion, cada uno con un efecto animado: viento, destellos, nieve, cometa, pétalos, estrellas, lluvia y un campo de hexágonos." />

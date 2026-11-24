@@ -22,15 +22,17 @@ jobs:
       - name: Generar SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/partitura.py "${{ github.repository_owner }}"
+        run: |
+          python3 scripts/partitura.py "${{ github.repository_owner }}"
+          python3 scripts/estadisticas.py "${{ github.repository_owner }}"
       - name: Publicar en la rama output
         run: |
-          mkdir -p /tmp/salida && cp assets/partitura.svg /tmp/salida/
+          mkdir -p /tmp/salida && cp assets/partitura.svg assets/estadisticas.svg /tmp/salida/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout --orphan output
           git rm -rf --quiet .
-          cp /tmp/salida/partitura.svg .
-          git add partitura.svg
-          git commit -m "Actualiza la partitura" --quiet
+          cp /tmp/salida/*.svg .
+          git add partitura.svg estadisticas.svg
+          git commit -m "Actualiza la partitura y las estadísticas" --quiet
           git push --force origin output
