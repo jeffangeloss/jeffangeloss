@@ -102,7 +102,7 @@ def main():
         x, y = 26 + col * 200, 62 + fila * 44
         val = miles(val) if isinstance(val, int) else val
         celdas.append(
-            f'<g class="cifra" style="animation-delay:{k * .12:.2f}s" transform="translate({x},{y})">'
+            f'<g class="cifra" style="animation-duration:{.6 + k * .12:.2f}s" transform="translate({x},{y})">'
             f'<path class="ico" d="{icono}" transform="translate(0,-15) scale(.78)"/>'
             f'<text class="val" x="26" y="0">{escape(val)}</text><text class="rot" x="26" y="15">{escape(rot)}</text></g>')
     barras = []
@@ -114,7 +114,7 @@ def main():
             f'<text class="len" x="460" y="{y}">{escape(nombre)}</text>'
             f'<text class="pct" x="814" y="{y}" text-anchor="end">{pct * 100:.1f} %</text>'
             f'<rect class="riel" x="460" y="{y + 6}" width="354" height="7" rx="3.5"/>'
-            f'<rect class="barra" x="460" y="{y + 6}" width="{largo * 354 / 260:.1f}" height="7" rx="3.5" fill="{color}" style="animation-delay:{.3 + k * .15:.2f}s"/>')
+            f'<rect class="barra" x="460" y="{y + 6}" width="{largo * 354 / 260:.1f}" height="7" rx="3.5" fill="{color}" style="animation-duration:{1.2 + k * .15:.2f}s,4s"/>')
     hoy = dt.date.today()
     meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "set", "oct", "nov", "dic"]
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Estadísticas de GitHub del último año: {cc["contributionCalendar"]["totalContributions"]} contribuciones, {cc["totalCommitContributions"]} commits, {cc["totalPullRequestContributions"]} pull requests, racha más larga de {larga} días. Lenguajes: {", ".join(n for n, _ in top)}.">
@@ -127,9 +127,9 @@ def main():
 .pct {{ fill: #8b93c9; font: 11px "Segoe UI",Helvetica,Arial,sans-serif }}
 .ico {{ fill: none; stroke: #8fa2ff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }}
 .riel {{ fill: #1c2342 }}
-.cifra {{ animation: entra 1s ease-out both }}
-@keyframes entra {{ from {{ opacity: 0 }} to {{ opacity: 1 }} }}
-.barra {{ transform-box: fill-box; transform-origin: left; animation: crece 1.6s cubic-bezier(.2,.8,.2,1) both, late 4s ease-in-out 2s infinite }}
+.cifra {{ animation: entra 1s ease-out }}
+@keyframes entra {{ from {{ opacity: .15 }} to {{ opacity: 1 }} }}
+.barra {{ transform-box: fill-box; transform-origin: left; animation: crece 1.6s cubic-bezier(.2,.8,.2,1), late 4s ease-in-out 2s infinite }}
 @keyframes crece {{ from {{ transform: scaleX(0) }} to {{ transform: scaleX(1) }} }}
 @keyframes late {{ 0%,100% {{ opacity: 1 }} 50% {{ opacity: .7 }} }}
 .brillo {{ animation: barre 7s ease-in-out infinite }}
