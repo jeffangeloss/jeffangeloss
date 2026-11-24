@@ -173,14 +173,14 @@ Instrumento de medición de la tesis sobre un motor de juego rítmico, que regis
 
 ### 🧰 Tecnologías
 
-**Lenguajes**
-![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=8FA2FF) ![TypeScript](https://img.shields.io/badge/TypeScript-161B22?style=flat-square&logo=typescript&logoColor=8FA2FF) ![Java](https://img.shields.io/badge/Java-161B22?style=flat-square) ![Dart](https://img.shields.io/badge/Dart-161B22?style=flat-square&logo=dart&logoColor=8FA2FF) ![SQL](https://img.shields.io/badge/SQL-161B22?style=flat-square&logo=postgresql&logoColor=8FA2FF)
+<img src="./assets/muro-logos.svg?v=1" width="100%" alt="Muro de logos. Lenguajes: Python, TypeScript, JavaScript, Java, Dart, C, C++, Haxe y Bash. Web y móvil: React, Vite, Tailwind CSS, Next.js, Node.js, Bun, FastAPI, Spring Boot, Flutter, Firebase, HTML y CSS. Datos, IA y DevOps: PostgreSQL, SQLite, Prisma, scikit-learn, Git, GitHub, GitHub Actions, Docker, Vercel y AWS. Sistemas, IoT y herramientas: Linux, Red Hat, Kali Linux, Arduino, Raspberry Pi, VS Code, Figma y Notion." />
 
-**Web y móvil**
-![React](https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=8FA2FF) ![FastAPI](https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=8FA2FF) ![Hono](https://img.shields.io/badge/Hono-161B22?style=flat-square&logo=hono&logoColor=8FA2FF) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-161B22?style=flat-square&logo=springboot&logoColor=8FA2FF) ![Flutter](https://img.shields.io/badge/Flutter-161B22?style=flat-square&logo=flutter&logoColor=8FA2FF)
+<div align="center">
 
-**DevOps y datos**
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-161B22?style=flat-square&logo=githubactions&logoColor=8FA2FF) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=8FA2FF) ![Flyway](https://img.shields.io/badge/Flyway-161B22?style=flat-square&logo=flyway&logoColor=8FA2FF) ![Vercel](https://img.shields.io/badge/Vercel-161B22?style=flat-square&logo=vercel&logoColor=8FA2FF) ![Docker](https://img.shields.io/badge/Docker-161B22?style=flat-square&logo=docker&logoColor=8FA2FF)
+<sub><b>Y también</b></sub><br/>
+![Hono](https://img.shields.io/badge/Hono-161B22?style=flat-square&logo=hono&logoColor=8FA2FF) ![Drizzle](https://img.shields.io/badge/Drizzle-161B22?style=flat-square&logo=drizzle&logoColor=8FA2FF) ![Flyway](https://img.shields.io/badge/Flyway-161B22?style=flat-square&logo=flyway&logoColor=8FA2FF) ![SonarQube Cloud](https://img.shields.io/badge/SonarQube%20Cloud-161B22?style=flat-square&logo=sonarqubecloud&logoColor=8FA2FF) ![Snyk](https://img.shields.io/badge/Snyk-161B22?style=flat-square&logo=snyk&logoColor=8FA2FF) ![Vitest](https://img.shields.io/badge/Vitest-161B22?style=flat-square&logo=vitest&logoColor=8FA2FF) ![Playwright](https://img.shields.io/badge/Playwright-161B22?style=flat-square) ![pgTAP](https://img.shields.io/badge/pgTAP-161B22?style=flat-square) ![Neon](https://img.shields.io/badge/Neon-161B22?style=flat-square) ![CatBoost](https://img.shields.io/badge/CatBoost-161B22?style=flat-square) ![DVC](https://img.shields.io/badge/DVC-161B22?style=flat-square&logo=dvc&logoColor=8FA2FF) ![MLflow](https://img.shields.io/badge/MLflow-161B22?style=flat-square&logo=mlflow&logoColor=8FA2FF) ![pandas](https://img.shields.io/badge/pandas-161B22?style=flat-square&logo=pandas&logoColor=8FA2FF) ![Power BI](https://img.shields.io/badge/Power%20BI-161B22?style=flat-square) ![Burp Suite](https://img.shields.io/badge/Burp%20Suite-161B22?style=flat-square) ![Claude Code](https://img.shields.io/badge/Claude%20Code-161B22?style=flat-square&logo=claude&logoColor=8FA2FF)
+
+</div>
 
 <img src="./assets/separador.svg" width="100%" alt="" />
 
